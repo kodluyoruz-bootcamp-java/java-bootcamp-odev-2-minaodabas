@@ -1,11 +1,11 @@
 package Homework2;
 
-public class AppleMarka extends Telefon implements Arama,Sms{
+public class AppleMarka extends Telefon implements Arama,Sms,Klavye{
     public AppleMarka(){
 
     }
 
-    public AppleMarka(String modeladi,String imeinumarasi,String versiyonnumarasi,int bellekkapasitesi,int ekranboyutu){
+    public AppleMarka(String modeladi,String imeinumarasi,String versiyonnumarasi,int bellekkapasitesi,double ekranboyutu){
         super(modeladi,imeinumarasi,versiyonnumarasi,bellekkapasitesi,ekranboyutu);
     }
 
@@ -33,5 +33,11 @@ public class AppleMarka extends Telefon implements Arama,Sms{
     public void EkranPaylasimi(){
         System.out.println("Ekran paylasimi yapiliyor..");
 
+    }
+
+
+    @Override
+    public void klavyeBilgisi() {
+        System.out.println("Dokunmatik klavye");
     }
 }

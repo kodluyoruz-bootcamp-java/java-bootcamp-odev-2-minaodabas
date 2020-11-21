@@ -5,12 +5,12 @@ public class Telefon {
      private String imeinumarasi;
      private String versiyonnumarasi;
      private int bellekkapasitesi;
-     private int ekranboyutu;
+     private double ekranboyutu;
      public Telefon(){
 
      }
 
-     public Telefon(String modeladi,String imeinumarasi,String versiyonnumarasi,int bellekkapasitesi,int ekranboyutu){
+     public Telefon(String modeladi,String imeinumarasi,String versiyonnumarasi,int bellekkapasitesi,double ekranboyutu){
           this.modeladi = modeladi;
           this.imeinumarasi = imeinumarasi;
           this.versiyonnumarasi = versiyonnumarasi;
@@ -60,11 +60,11 @@ public class Telefon {
           this.bellekkapasitesi = bellekkapasitesi;
      }
 
-     public int getEkranboyutu() {
+     public double getEkranboyutu() {
           return ekranboyutu;
      }
 
-     public void setEkranboyutu(int ekranboyutu) {
+     public void setEkranboyutu(double ekranboyutu) {
           this.ekranboyutu = ekranboyutu;
      }
 }

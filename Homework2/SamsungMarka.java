@@ -1,11 +1,11 @@
 package Homework2;
 
-public class SamsungMarka extends Telefon implements Arama,Sms {
+public class SamsungMarka extends Telefon implements Arama,Sms,Klavye {
 
     public SamsungMarka(){
 
     }
-    public SamsungMarka(String modeladi,String imeinumarasi,String versiyonnumarasi,int bellekkapasitesi,int ekranboyutu){
+    public SamsungMarka(String modeladi,String imeinumarasi,String versiyonnumarasi,int bellekkapasitesi,double ekranboyutu){
         super(modeladi,imeinumarasi,versiyonnumarasi,bellekkapasitesi,ekranboyutu);
     }
 
@@ -29,5 +29,10 @@ public class SamsungMarka extends Telefon implements Arama,Sms {
     public void Mp3(){
         System.out.println("Mp3 basliyor..");
 
+    }
+
+    @Override
+    public void klavyeBilgisi() {
+        System.out.println("Tuslu klavye");
     }
 }
